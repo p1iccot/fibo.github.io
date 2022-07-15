@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/0f768ab6b9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Fibo</title>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="popup__sign popup__sign--phone">
+			<div class="popup__sign-content sign-popup popup__sign-content--phone">
+				<div class="close__popup"><img src="img/Popup/xmark.svg" alt="xmark"></div>
+
+				<p class="sign-popup__title">Вход на сайт</p>
+
+				<div class="sign-popup__phoneContent">
+					<input type="number" placeholder="Телефон" class="phoneContent__input input__send">
+					<p class="phoneContent__change">Изменить</p>
+				</div>
+
+				<div class="sign-popup__senContent">
+					<div class="sign-popup__btn send__btn">Выслать код</div>
+					<p class="sign-popup__sendText">
+						Продолжая, вы соглашаетесь со сбором и обработкой персональных
+						данных и пользовательским соглашением
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup__sign popup__sign--sms">
+			<div class="popup__sign-content sign-popup popup__sign-content--sms">
+				<div class="close__popup close__popup-sms"><img src="img/Popup/xmark.svg" alt="xmark"></div>
+
+				<p class="sign-popup__title">Вход на сайт</p>
+
+				<div class="sign-popup__phoneContent">
+					<div class="phoneContent__input input__get"></div>
+					<p class="phoneContent__change" id="change__phone">Изменить</p>
+				</div>
+
+				<div class="sign-popup__smsContent">
+					<input type="number" placeholder="Код из смс" class="sms__input input__sms">
+					<p class="smsContent__change">Новый код</p>
+				</div>
+
+				<div class="sign-popup__btn sign-popup-sms__btn" id="sign-sms__btn">Войти</div>
+
+				<p class="popup__sign--sms-text">!!! Это учебный макет, введите "1234"</p>
+
+			</div>
+		</div>
+
+		<div class="card__popup-bg">
+			<div class="card card__popup">
+
+				<div class="card__popup__close"><img src="img/Popup/xmark.svg" alt="xmark"></div>
+
+				<div class="card-body">
+					<h4 class="card-title">Ваш заказ</h4>
+
+					<div data-cart-empty class="alert alert-secondary" role="alert">
+						Корзина пуста
+					</div>
+
+					<div class="cart-wrapper">
+
+					</div>
+
+				</div>
+
+				<div id="order-form" class="card-body border-top none">
+					<h5 class="card__form-title">Оформить заказ</h4>
+						<form>
+							<div class="form-group">
+								<input type="number" class="form-control" placeholder="Ваш номер телефона">
+							</div>
+							<button type="submit" class=" btn-primary">Заказать</button>
+						</form>
+				</div>
+
+			</div>
+		</div>
+
+		<header class="header" id="header">
+
+			<asaide class="header__menu-asaide asaide-menu" id="asaide-menu" tabindex="-1">
+				<nav class="asaide__nav">
+					<ul>
+						<li class="asaide__link">Пицца</li>
+						<li class="asaide__link">Паста</li>
+						<li class="asaide__link">Супы</li>
+						<li class="asaide__link">Салаты</li>
+						<li class="asaide__link">Напитки</li>
+						<li class="asaide__link">Десерты</li>
+						<li class="asaide__link">Бакалея</li>
+						<li class="asaide__link">Антипасти</li>
+						<li><a href="actions.html" class="asaide__link">Акции</a></li>
+						<li class="asaide__link asaide--c">Комбо</li>
+						<li><a class="asaide__link" href="contacts.html">Контакты</a></li>
+						<li class="asaide__link asaide--m popup-link" id="popup-link"><span>Войти</span></li>
+
+						<li class="asaide__contact">8 499 391-84-49</li>
+					</ul>
+
+					<div class="asaide__cart cart__click">
+						<p class="asaide-cart__text">Корзина</p>
+						<p class="asaide-cart__count cart__count">0</p>
+					</div>
+				</nav>
+			</asaide>
+
+			<div class="header__content container">
+
+				<div class="header__body">
+					<div class="header__logo">
+						<img src="img/Header/header-logo.png" alt="Fibo">
+					</div>
+
+					<div class="header__info info-header">
+						<p class="info-header-adress">Доставка пасты <span>Москва</span></p>
+
+						<div class="info-header__timeContent">
+							<img src="img/Header/spirale.svg" alt="spirale" class="timeContent__spirale">
+							<p class="timeContent__text">Яндекс еда <span></span> 4.8</p>
+							<img src="img/Header/star.svg" alt="star" class="timeContent__star">
+							<p class="timeContent__text">Время доставки <span></span> от 31 мин</p>
+						</div>
+					</div>
+
+					<div class="header__contact-adaptiv">
+						<a href="#">
+							<div class="header__btn btn">Заказать звонок</div>
+						</a>
+
+						<p class="header__contact">8 499 391-84-49</p>
+
+					</div>
+
+					<div class="header__body-cart cart__click cart">
+						<p class="body-cart__text">Корзина</p>
+						<p class="body-cart__count cart__count">0</p>
+					</div>
+
+					<div class="burger__content">
+						<div class="_burgerSTX" id="_burgerSTX">
+							<span class="span-one"></span>
+							<span class="span-two"></span>
+							<span class="span-three"></span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="header__nav-content">
+
+					<nav class="header__nav">
+						<ul>
+							<li class="header__nav-link _ahv">Пицца</li>
+							<li class="header__nav-link _ahv">Паста</li>
+							<li class="header__nav-link _ahv">Супы</li>
+							<li class="header__nav-link _ahv">Салаты</li>
+							<li class="header__nav-link _ahv">Напитки</li>
+							<li class="header__nav-link _ahv">Десерты</li>
+							<li class="header__nav-link _ahv">Бакалея</li>
+							<li class="header__nav-link _ahv">Антипасти</li>
+							<li><a href="actions.html" class="header__nav-link _ahv">Акции</a></li>
+							<li class="header__nav-link _ahv">Комбо</li>
+							<li><a href="contacts.html" class="header__nav-link _ahv">Контакты</a></li>
+							<li class="header__nav-link _ahv popup-link" id="popup-link"><span>Войти</span></li>
+						</ul>
+					</nav>
+
+					<div class="header__body-cart cart__click header__nav-cart cart">
+						<p class="body-cart__text">Корзина</p>
+						<p class="body-cart__count cart__count">0</p>
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<main class="page">
+
+			<section class="slider__content">
+				<div class="slider">
+					<div class="slider--pading">
+						<div class="slider__item"><img src="img/Slider/slider1.png" alt="slider"></div>
+					</div>
+					<div class="slider--pading">
+						<div class="slider__item"><img src="img/Slider/slider2.png" alt="slider"></div>
+					</div>
+					<div class="slider--pading">
+						<div class="slider__item"><img src="img/Slider/slider3.png" alt="slider"></div>
+					</div>
+					<div class="slider--pading">
+						<div class="slider__item"><img src="img/Slider/slider4.png" alt="slider"></div>
+					</div>
+					<div class="slider--pading">
+						<div class="slider__item"><img src="img/Slider/slider5.png" alt="slider"></div>
+					</div>
+					<div class="slider--pading">
+						<div class="slider__item"><img src="img/Slider/slider3.png" alt="slider"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="new__food">
+
+				<div class="new__food-content container">
+					<h1 class="new__food-title">Новинки</h1>
+
+					<div class="food__slider">
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+						<div class="new__food--padding-item">
+							<div class="new__food-item food-item">
+								<div class="food-item__img"><img src="img/New Food/new.png" alt="food"></div>
+								<p class="food-item__text">Карбонара <br> <span>от 120 ₽</span></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="menu">
+				<div class="menu__content container">
+
+					<h2 class="menu__title">Паста</h2>
+
+					<div class="menu__items" id="products-container">
+					</div>
+
+			</section>
+
+			<section class="actions">
+				<div class="actions__content container">
+					<h2 class="actions__title">Наши <span> Акции</span></h2>
+
+					<div class="actions__card-flex">
+
+						<div class="actions__card--content--b">
+							<div class="actions__card" id="action-1">
+								<img src="img/Actions/action-card--b.png" alt="action">
+							</div>
+						</div>
+
+						<div class="actions__card--content--s">
+							<div class="actions__card--flexCard">
+								<div class="actions__card" id="action-2">
+									<img src="img/Actions/action-card--s.png" alt="action">
+								</div>
+
+								<div class="actions__card" id="action-3">
+									<img src="img/Actions/action-card--s.png" alt="action">
+								</div>
+							</div>
+
+							<div class="actions__card--flexCard">
+								<div class="actions__card" id="action-4">
+									<img src="img/Actions/action-card--s.png" alt="action">
+								</div>
+
+								<div class="actions__card" id="action-5">
+									<img src="img/Actions/action-card--s.png" alt="action">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="actions__btn--padding">
+						<a href="actions.html">
+							<div class="actions__btn">Все акции</div>
+						</a>
+					</div>
+
+					<img class="actions__vector" src="img/Actions/action-vector.png" alt="vector">
+				</div>
+			</section>
+
+			<section class="map">
+				<div class="map__content container">
+					<h2 class="map__title">Оплата и доставка</h2>
+
+					<div class="map__card-flex">
+
+						<div class="map__card--padding">
+							<div class="map__card card-map">
+								<div class="card-map__img"><img src="img/Map/vector1.svg" alt="map"></div>
+								<div class="card-map__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+								</div>
+							</div>
+						</div>
+
+						<div class="map__card--padding">
+							<div class="map__card card-map">
+								<div class="card-map__img"><img src="img/Map/vector2.svg" alt="map"></div>
+								<div class="card-map__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+								</div>
+							</div>
+						</div>
+
+						<div class="map__card--padding">
+							<div class="map__card card-map">
+								<div class="card-map__img"><img src="img/Map/vector3.svg" alt="map"></div>
+								<div class="card-map__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+								</div>
+							</div>
+						</div>
+
+						<div class="map__card--padding">
+							<div class="map__card card-map">
+								<div class="card-map__img"><img src="img/Map/vector4.svg" alt="map"></div>
+								<div class="card-map__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="map__img-content">
+						<div class="map__img _obj">
+							<a href="contacts.html"><img src="img/Map/map.png" alt="map"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__content container">
+				<img class="footer--bc" src="img/Footer/footer.png" alt="footer">
+
+				<div class="footer__info-content footer-info">
+					<div class="footer-info__logoContent">
+						<div class="footer__logo"><img src="img/Header/header-logo.png" alt="logo"></div>
+
+						<p class="footer-contact__phone">8 499 391-84-49</p>
+
+						<div class="footer__btn btn">Заказать звонок</div>
+					</div>
+
+					<p class="footer-info-kkal">Калорийность и состав <span>Правовая информация</span></p>
+
+					<div class="footer__info-webContent">
+						<p class="webContent__title">Мы в соцсетях</p>
+
+						<div class="webContent__flex">
+							<p class="webContent-seti">YouTube <br>Instagram</p>
+							<p class="webContent-seti">Facebook <br>ВКонтакте</p>
+							<p class="webContent-seti">Москва ул. Проспект <br>Вернадского 86В</p>
+						</div>
+					</div>
+
+					<div class="footer-info__payContent">
+						<p class="payContent-copy">YaBao Все праав защищены © 2022</p>
+
+						<div class="pay__flex">
+							<img src="img/Footer/pay1.png" alt="pay" class="pay__img">
+							<img src="img/Footer/pay2.png" alt="pay" class="pay__img">
+							<img src="img/Footer/pay3.png" alt="pay" class="pay__img">
+						</div>
+					</div>
+				</div>
+
+				<div class="footer__contact-content footer-contact">
+					<p class="footer-contact__title">Остались вопросы? А мы всегда на связи:</p>
+
+					<div class="footer-contact__messagesContent">
+						<div class="footer-contact__message"><img src="img/Footer/message1.svg" alt="message"></div>
+						<div class="footer-contact__message"><img src="img/Footer/message2.svg" alt="message"></div>
+						<div class="footer-contact__message"><img src="img/Footer/message3.svg" alt="message"></div>
+						<div class="footer-contact__message"><img src="img/Footer/message4.svg" alt="message"></div>
+						<div class="footer-contact__message"><img src="img/Footer/message3.svg" alt="message"></div>
+						<div class="footer-contact__message message--m"><img src="img/Footer/message6.svg"
+								alt="message"></div>
+
+						<div class="footer-contact__send">Написать нам</div>
+					</div>
+
+					<p class="footer-contact__phone">8 499 391-84-49</p>
+
+					<div class="footer__btn btn">Заказать звонок</div>
+
+					<div class="footer-info__payContent">
+						<p class="payContent-copy">YaBao Все праав защищены © 2022</p>
+
+						<div class="pay__flex">
+							<img src="img/Footer/pay1.png" alt="pay" class="pay__img">
+							<img src="img/Footer/pay2.png" alt="pay" class="pay__img">
+							<img src="img/Footer/pay3.png" alt="pay" class="pay__img">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</footer>
+
+
+		<script src="js/renderProducts.js"></script>
+		<script src="js/toggleCartStatus.js"></script>
+		<script src="js/counter-02.js"></script>
+		<script src="js/cart-02.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/app.js"></script>
+</body>
+
+</html>

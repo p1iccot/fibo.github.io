@@ -1,0 +1,98 @@
+[
+	{
+		"id": 1,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food1.png"
+	},
+	{
+		"id": 2,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food2.png"
+	},
+	{
+		"id": 3,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food3.png"
+	},
+	{
+		"id": 4,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food4.png"
+	},
+	{
+		"id": 5,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food1.png"
+	},
+	{
+		"id": 6,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food2.png"
+	},
+	{
+		"id": 7,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food3.png"
+	},
+	{
+		"id": 8,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food4.png"
+	},
+	{
+		"id": 9,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food1.png"
+	},
+	{
+		"id": 10,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food2.png"
+	},
+	{
+		"id": 11,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food3.png"
+	},
+	{
+		"id": 12,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food4.png"
+	},
+	{
+		"id": 13,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food4.png"
+	},
+	{
+		"id": 14,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food1.png"
+	},
+	{
+		"id": 15,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food2.png"
+	},
+	{
+		"id": 16,
+		"title": "С креветками и трюфелями",
+		"price": 600,
+		"imgSrc": "food3.png"
+	}
+]
