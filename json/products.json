@@ -3,13 +3,13 @@
 		"id": 1,
 		"title": "С креветками и трюфелями",
 		"price": 600,
-		"imgSrc": "food1.png"
+		"imgSrc": "../img/menu/food1.png"
 	},
 	{
 		"id": 2,
 		"title": "С креветками и трюфелями",
 		"price": 600,
-		"imgSrc": "food2.png"
+		"imgSrc": "../img/menu/food1.png"
 	},
 	{
 		"id": 3,
