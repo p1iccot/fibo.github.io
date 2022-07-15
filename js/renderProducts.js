@@ -3,7 +3,7 @@ const productsContainer = document.querySelector('#products-container');
 getProducts();
 
 async function getProducts() {
-	const response = await fetch('../json/products.json');
+	const response = await fetch('../fibo.github.io/json/products.json');
 	const productsArray = await response.json();
 	renderProducts(productsArray);
 }
