@@ -12,7 +12,7 @@ function renderProducts(productsArray) {
 	productsArray.forEach(function (item) {
 		const productHTML = `<div class="col-md-6">
 						<div class="card mb-4 menu__item " data-id="${item.id}">
-							<img class="product-img item-menu__img"" src="${item.imgSrc}" alt="">
+							<img class="product-img item-menu__img"" src="../img/menu/food1.png" alt="">
 							<div class="card-body item-menu__body text-center">
 								<h4 class="item-title item-menu__title">${item.title}</h4>
 
